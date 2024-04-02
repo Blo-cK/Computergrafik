@@ -66,12 +66,38 @@
 
 
 int main(void) {
+  // image
+  int image_with=256;
+  int image_height=256;
+  // Render
+  // P3 und 255 ist Kontext für das PPM Format
+  std::cout << "P3\n" << image_with << ' ' << image_height << "\n255\n";
+
+  for (int j = 0; j < image_height; ++j) {
+      std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
+      for (int i = 0; i < image_with; ++i) {
+          auto r = double(i) / (image_with - 1);
+          auto g = double(j) / (image_height - 1);
+          auto b = 0;
+
+          int ir = static_cast<int>(255.999 * r);
+          int ig = static_cast<int>(255.999 * g);
+          int ib = static_cast<int>(255.999 * b);
+
+          std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+      }
+
+  }
+  std::clog << "\rDone.                        \n";
+
   // Bildschirm erstellen
+
   // Kamera erstellen
   // Für jede Pixelkoordinate x,y
   //   Sehstrahl für x,y mit Kamera erzeugen
   //   Farbe mit raytracing-Methode bestimmen
   //   Beim Bildschirm die Farbe für Pixel x,y, setzten
+  std::cout<<"bruh\n";
 
   return 0;   
 }

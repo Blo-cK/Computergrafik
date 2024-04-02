@@ -90,6 +90,9 @@ struct Vector {
 
 };
 
+
+
+
 static const long double PI = std::acos(-1.0L);
 
 // shorter comfortable type names

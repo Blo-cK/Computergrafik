@@ -91,8 +91,32 @@ Vector<FLOAT_TYPE, 3u> Vector<FLOAT_TYPE, N>::cross_product(const Vector<FLOAT_T
           this->vector[0] * v.vector[2] - this->vector[2] * v.vector[0],
           this->vector[0] * v.vector[1] - this->vector[1] * v.vector[0] };
 }
+template<class FLOAT_TYPE, size_t N>
 
-/*
+/* new code */
+FLOAT_TYPE Vector<FLOAT_TYPE, N>::length() const {
+    FLOAT_TYPE ret = 0;
+    for (size_t i = 0u; i < N; i++) {
+        ret+= pow(vector[i],2.0);
+    }
+    ret = sqrt(ret);
+    return ret;
+}
+
+template<class FLOAT_TYPE, size_t N>
+FLOAT_TYPE Vector<FLOAT_TYPE, N>::square_of_length() const {
+    return pow(length(),2);
+}
+template<class F, size_t K>
+F operator*(Vector<F, K> vector1, const Vector<F, K> vector2) {
+    F ret = 0.f;
+    for (size_t i = 0u; i < K; i++) {
+        ret+= vector1[i]*vector2[i];
+    }
+    return ret;
+}
+
+
 template <class FLOAT_TYPE, size_t N>  
 void Vector<FLOAT_TYPE, N>::normalize() {
   *this /= length(); //  +/- INFINITY if length is (near to) zero
@@ -109,5 +133,5 @@ FLOAT_TYPE Vector<FLOAT_TYPE, N>::angle(size_t axis_1, size_t axis_2) const {
   Vector<FLOAT_TYPE, N> normalized = (1.0f / length()) * *this;
   return atan2( normalized[axis_2], normalized[axis_1] );
 }
-*/
+
 

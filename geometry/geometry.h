@@ -91,19 +91,22 @@ public:
   bool intersects(const Ray<FLOAT, N> &ray, Intersection_Context<FLOAT, N> & context) const;
 
   // returns a value t such that ray.origin + t * ray.direction is the intersection point
-  // t is zero if no intersection occured
+  // t is zero if no intersection occurred
   FLOAT intersects(const Ray<FLOAT, N> &ray) const;
 
   // returns true iff this Sphere intersects with the given sphere
-  /*
+
   bool intersects(Sphere<FLOAT, N> sphere) const;
-  */
+
   
   // returns true iff the given point is inside this Sphere or on its surface
-  /*
+
   bool inside(const Vector<FLOAT, N> p) const;
-  */
+
 };
+
+
+
 
 template <class FLOAT, size_t N>
 class Triangle {
@@ -124,14 +127,14 @@ public:
   Triangle(Vector<FLOAT, N> a, Vector<FLOAT, N> b, Vector<FLOAT, N> c, Vector<FLOAT, N> na, Vector<FLOAT, N> nb, Vector<FLOAT, N> nc);
 
   // returns true if this Triangle intersects the given ray
-  // if an intersection occured, than intersection is set to the intersection point
+  // if an intersection occurred, then intersection is set to the intersection point
   //   u and v are set to the barycentric coordinates of the intersection
   //   t is set to a value with intersection = ray.origin + t * ray.direction
   //   normal points away from the surface (clockwise order of a,b, and c)
   bool intersects(const Ray<FLOAT, N> &ray, Vector<FLOAT, N> & normal, Vector<FLOAT, N> & intersection, FLOAT & u, FLOAT & v, FLOAT & t) const;
 
   // returns true if this Triangle intersects the given ray
-  // if an intersection occured, than context.intersection is set to the intersection point
+  // if an intersection occurred, then context.intersection is set to the intersection point
   //   context.u and context.v are set to the barycentric coordinates of the intersection
   //   context.t is set to a value with intersection = ray.origin + t * ray.direction
   //   context.normal points away from the surface (clockwise order of a,b, and c)

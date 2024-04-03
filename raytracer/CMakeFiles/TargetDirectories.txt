@@ -1,0 +1,3 @@
+/home/robert/Computergrafik/raytracer/CMakeFiles/raytracer.dir
+/home/robert/Computergrafik/raytracer/CMakeFiles/edit_cache.dir
+/home/robert/Computergrafik/raytracer/CMakeFiles/rebuild_cache.dir

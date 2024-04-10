@@ -95,17 +95,18 @@ template<class FLOAT_TYPE, size_t N>
 
 /* new code */
 FLOAT_TYPE Vector<FLOAT_TYPE, N>::length() const {
-    FLOAT_TYPE ret = 0;
-    for (size_t i = 0u; i < N; i++) {
-        ret+= pow(vector[i],2.0);
-    }
+    FLOAT_TYPE ret = square_of_length();
     ret = sqrt(ret);
     return ret;
 }
 
 template<class FLOAT_TYPE, size_t N>
 FLOAT_TYPE Vector<FLOAT_TYPE, N>::square_of_length() const {
-    return pow(length(),2);
+    FLOAT_TYPE ret = 0;
+    for (size_t i = 0u; i < N; i++) {
+        ret+= pow(vector[i],2.0);
+    }
+    return ret;
 }
 template<class F, size_t K>
 F operator*(Vector<F, K> vector1, const Vector<F, K> vector2) {

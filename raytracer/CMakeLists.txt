@@ -9,6 +9,7 @@ add_compile_options(-g -Wall -Wextra -Wpedantic -Wl,--stack,16777216)
 add_executable(raytracer raytracer.cc math_test math_test.cc math.cc geometry_test.cc geometry.cc geometry_test
         geometry.h
         geometry.tcc
-        )
+        color.h
+)
 target_link_libraries(raytracer gtest gtest_main)
 

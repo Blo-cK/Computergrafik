@@ -19,6 +19,7 @@ TEST(VECTOR, ListInitialization3df) {
 }
 
 
+
 TEST(VECTOR, ListInitialization4df) {
   Vector4df vector = {1.0, 0.0, 5.0, -5.0};
   
@@ -399,5 +400,6 @@ TEST(VECTOR, CrossVectorProduct7) {
   EXPECT_NEAR(0.0, cross[1], 0.00001);
   EXPECT_NEAR(0.0, cross[2], 0.00001);
 }
+TEST(VECTOR, VECTOR_CrossVectorProduct7_Test)
 
 }

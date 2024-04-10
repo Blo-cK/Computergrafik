@@ -1,0 +1,8 @@
+/home/robert/Computergrafik/asteroids/CMakeFiles/main_game.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/math_test.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/geometry_test.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/physics_test.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/game_test.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/test.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/edit_cache.dir
+/home/robert/Computergrafik/asteroids/CMakeFiles/rebuild_cache.dir

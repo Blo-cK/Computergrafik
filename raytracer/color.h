@@ -10,7 +10,7 @@
 #include <iostream>
 
 
-void write_color(std::ostream &out, Vector3df pixel_color){
+void write_color(std::ostream &out, Vector3df pixel_color) {
     out << static_cast<int>(255.999 * pixel_color[0]) << ' '
         << static_cast<int>(255.999 * pixel_color[1]) << ' '
         << static_cast<int>(255.999 * pixel_color[2]) << '\n';

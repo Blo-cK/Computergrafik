@@ -1151,6 +1151,7 @@ CMakeFiles/raytracer.dir/math_test.cc.o: math_test.cc \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/raytracer.dir/raytracer.cc.o: raytracer.cc \
+  color.h \
   geometry.h \
   math.h \
   /usr/include/alloca.h \
@@ -1392,6 +1393,8 @@ CMakeFiles/raytracer.dir/raytracer.cc.o: raytracer.cc \
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/algorithm:
+
+color.h:
 
 math.tcc:
 

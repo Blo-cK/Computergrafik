@@ -1156,6 +1156,7 @@ CMakeFiles/raytracer.dir/math_test.cc.o
 
 CMakeFiles/raytracer.dir/raytracer.cc.o
  /home/robert/Computergrafik/raytracer/raytracer.cc
+ /home/robert/Computergrafik/raytracer/color.h
  /home/robert/Computergrafik/raytracer/geometry.h
  /home/robert/Computergrafik/raytracer/math.h
  /usr/include/alloca.h

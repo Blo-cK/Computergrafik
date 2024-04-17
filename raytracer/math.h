@@ -73,6 +73,7 @@ struct Vector {
   template <class F, size_t K>    
   friend Vector<F, K> operator-(const Vector<F, K> value, const Vector<F, K> minuend);
 
+
   // returns the (euclidian) length of this Vector
 
   FLOAT_TYPE length() const;

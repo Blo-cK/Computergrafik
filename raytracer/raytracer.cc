@@ -64,8 +64,16 @@
 // Am besten einen Zeiger auf das Objekt zurückgeben. Wenn dieser nullptr ist, dann gibt es kein sichtbares Objekt.
 
 // Die rekursive raytracing-Methode. Am besten ab einer bestimmten Rekursionstiefe (z.B. als Parameter übergeben) abbrechen.
+
+//prüfen ob Sphere getroffen wird
+//todo
+
 Vector3df ray_color(const Ray3df& r) {
-    return Vector3df({0,0,0});
+
+
+    Vector3df unit_direction = Vector(r.direction);
+    float a = 0.5f*(unit_direction[1] +1);
+    return (1.0f-a)*Vector3df({1.0,1.0,1.0})+a*Vector3df({0.5,0.7,1.0});
 }
 
 int main(void) {
@@ -74,7 +82,8 @@ int main(void) {
     float image_width = 400.f;
         //image height calc
         float image_height = static_cast<int>(image_width/aspect_ratio);
-        image_height = (image_height > 1) ? 1 : image_height;
+
+        image_height = (image_height < 1) ? 1 : image_height;
 
     //Camera
     auto focal_length = 1.0f;

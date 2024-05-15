@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -std=gnu++20 -g -Wall -Wextra -Wpedantic -Wl,--stack,16777216
+CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -g -Wall -Wextra -Wpedantic -Wl,--stack,16777216
 

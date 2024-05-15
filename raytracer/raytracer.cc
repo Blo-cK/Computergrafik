@@ -79,12 +79,12 @@ Vector3df ray_color(const Ray3df& r) {
     Intersection_Context context = hit_sphere(Vector3df({0,0,-1}), 0.5, r);
     if (context.t > 0.0) {
         Vector3df N = context.normal;
-        return 0.5f*Vector3df({N[0]+1, N[1]+1, N[2]+1});
+        return 0.5f*color({N[0]+1, N[1]+1, N[2]+1});
     }
 
     Vector3df unit_direction = Vector(r.direction);
     float a = 0.5f*(unit_direction[1] +1);
-    return (1.0f-a)*Vector3df({1.0,1.0,1.0})+a*Vector3df({0.5,0.7,1.0});
+    return (1.0f-a)*color({1.0,1.0,1.0})+a*color({0.5,0.7,1.0});
 }
 
 int main(void) {

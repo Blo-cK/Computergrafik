@@ -9,6 +9,7 @@
 #include "geometry.h"
 #include <iostream>
 
+using color = Vector3df;
 
 void write_color(std::ostream &out, Vector3df pixel_color) {
     out << static_cast<int>(255.999 * pixel_color[0]) << ' '

@@ -67,9 +67,20 @@
 
 //prüfen ob Sphere getroffen wird
 //todo
+Intersection_Context<float, 3> hit_sphere(const Vector3df& center, float radius, const Ray3df& r) {
+Sphere3df sphere = {center, radius};
+Intersection_Context<float, 3> context;
+context.t = -INFINITY;
+sphere.intersects(r, context);
+return context;
+}
 
 Vector3df ray_color(const Ray3df& r) {
-
+    Intersection_Context context = hit_sphere(Vector3df({0,0,-1}), 0.5, r);
+    if (context.t > 0.0) {
+        Vector3df N = context.normal;
+        return 0.5f*Vector3df({N[0]+1, N[1]+1, N[2]+1});
+    }
 
     Vector3df unit_direction = Vector(r.direction);
     float a = 0.5f*(unit_direction[1] +1);
@@ -93,7 +104,7 @@ int main(void) {
 
     //Calculate Vectors
     auto viewport_u = Vector3df({viewport_width,0,0});
-    auto viewport_v = Vector3df({0,viewport_height,0});
+    auto viewport_v = Vector3df({0,-viewport_height,0});
     //Calculate horizontal and vertical delta vectors
     auto pixel_delta_u = (1/image_width)*viewport_u;
     auto pixel_delta_v = (1/image_height)*viewport_v;

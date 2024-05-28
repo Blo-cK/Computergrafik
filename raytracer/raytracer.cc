@@ -120,9 +120,11 @@ public:
 //Farbe
 template<class FLOAT, size_t N>
     Vector<FLOAT, N> ray_color(const Ray<FLOAT, N> &r, allObjects &box, int depth) {
+        //Erstertreffer
         Intersection_Context<FLOAT, N> rec;
+        //Schattentreffer
         Intersection_Context<FLOAT, N> shader_Rec;
-
+        //Prüfen ob Ray ein Objekt trift.
         raytracerObject *object = box.hit(r, rec);
         if (depth > 0 && box.hit(r, rec) != nullptr) {
             Vector3df Lambertian = (box.lights[0].center - rec.intersection);

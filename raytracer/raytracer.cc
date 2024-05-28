@@ -48,12 +48,63 @@
 // können auch zusammen in eine Datenstruktur für die gesammte zu
 // rendernde "Szene" zusammengefasst werden.
 
-// Die Cornelbox aufgebaut aus den Objekten
-// Am besten verwendet man hier einen std::vector< ... > von Objekten.
+
 
 // Punktförmige "Lichtquellen" können einfach als Vector3df implementiert werden mit weisser Farbe,
 // bei farbigen Lichtquellen müssen die entsprechenden Daten in Objekt zusammengefaßt werden
 // Bei mehreren Lichtquellen können diese in einen std::vector gespeichert werden.
+class light {
+public:
+    Vector3df center;
+    Vector3df color = {0.f, 0.f, 0.f};
+    explicit light(const Vector3df &center) : center(center){}
+};
+
+// Die Cornelbox aufgebaut aus den Objekten
+// Am besten verwendet man hier einen std::vector< ... > von Objekten.
+class raytracerObject{
+public:
+    Sphere3df sphere;
+    Vector3df color;
+    bool reflective;
+
+    raytracerObject(): sphere({0.f, 0.f, 0.f}, 0.f), color({0.f, 0.f, 0.f}), reflective(false){}
+    raytracerObject(const Sphere3df &s, const Vector3df &c, const bool &r ) : sphere(s), color(c), reflective(r){}
+};
+
+class allObjects {
+public:
+    std::vector<raytracerObject> objects;
+    std::vector<light> lights;
+    allObjects();
+    allObjects(raytracerObject object) { add(object); }
+
+    void add(raytracerObject object) { objects.push_back(object); }
+
+//Kollisionsprüfung (hit methode)
+    template<class FLOAT, size_t N>
+    raytracerObject* hit(const Ray<FLOAT, N> &r, Intersection_Context<FLOAT, N> &rec) {
+        raytracerObject nearest;
+        Intersection_Context<FLOAT, N> temp_rec;
+        float closest_so_far = std::numeric_limits<float>::max();
+//nächstes Object finden
+        for (const auto &object: objects) {
+            if (object.sphere.intersects(r, temp_rec)) {
+                if (closest_so_far > temp_rec.t && temp_rec.t > 0) {
+                    closest_so_far = temp_rec.t;
+                    nearest = object;
+                    rec = temp_rec;
+                }
+            }
+        }
+//keine kollision
+        if(closest_so_far == std::numeric_limits<float>::max())
+            return nullptr;
+//Treffer melden
+        return new raytracerObject(nearest.sphere, nearest.color, nearest.reflective);
+    }
+};
+
 
 // Sie benötigen eine Implementierung von Lambertian-Shading, z.B. als Funktion
 // Benötigte Werte können als Parameter übergeben werden, oder wenn diese Funktion eine Objektmethode eines
@@ -65,27 +116,38 @@
 
 // Die rekursive raytracing-Methode. Am besten ab einer bestimmten Rekursionstiefe (z.B. als Parameter übergeben) abbrechen.
 
-//prüfen ob Sphere getroffen wird
-//todo
-Intersection_Context<float, 3> hit_sphere(const Vector3df& center, float radius, const Ray3df& r) {
-Sphere3df sphere = {center, radius};
-Intersection_Context<float, 3> context;
-context.t = -INFINITY;
-sphere.intersects(r, context);
-return context;
-}
 
-Vector3df ray_color(const Ray3df& r) {
-    Intersection_Context context = hit_sphere(Vector3df({0,0,-1}), 0.5, r);
-    if (context.t > 0.0) {
-        Vector3df N = context.normal;
-        return 0.5f*color({N[0]+1, N[1]+1, N[2]+1});
+//Farbe
+template<class FLOAT, size_t N>
+    Vector<FLOAT, N> ray_color(const Ray<FLOAT, N> &r, allObjects &box, int depth) {
+        Intersection_Context<FLOAT, N> rec;
+        Intersection_Context<FLOAT, N> shader_Rec;
+
+        raytracerObject *object = box.hit(r, rec);
+        if (depth > 0 && box.hit(r, rec) != nullptr) {
+            Vector3df Lambertian = (box.lights[0].center - rec.intersection);
+            Ray3df shaderRay = {rec.intersection + 0.01f * rec.normal, Lambertian};
+            box.hit(shaderRay, shader_Rec);
+            float intensity = 0.f;
+            if (shader_Rec.t > 0 && shader_Rec.t < 1) {
+                intensity = 0.3f;
+            } else {
+                Lambertian.normalize();
+                intensity = rec.normal * Lambertian;
+            }
+            if (intensity < 0.3f) {
+                intensity = 0.3f;
+            }
+            if (object->reflective) {
+                Vector3df reflective_Vec = r.direction - 2.f * (r.direction * rec.normal) * rec.normal;
+                Ray3df reflective_r = {rec.intersection + 0.1f * rec.normal, reflective_Vec};
+                return intensity * ray_color(reflective_r, box, depth - 1);
+            }
+            return intensity * object->color;
+        }
+        return Vector3df{0.f, 0.f, 0.f};
     }
 
-    Vector3df unit_direction = Vector(r.direction);
-    float a = 0.5f*(unit_direction[1] +1);
-    return (1.0f-a)*color({1.0,1.0,1.0})+a*color({0.5,0.7,1.0});
-}
 
 int main(void) {
     // Bildschirm erstellen
@@ -95,6 +157,30 @@ int main(void) {
         float image_height = static_cast<int>(image_width/aspect_ratio);
 
         image_height = (image_height < 1) ? 1 : image_height;
+    //Cornell Box erstellen
+    //Rechte Wand
+    allObjects box(raytracerObject(Sphere3df({10021.f, 0.0f, 0.f }, 10000.f), Vector3df({0.f, 1.f, 0.f}), false));
+    //Linke Wand
+    box.add(raytracerObject(Sphere3df({ -10021.f, 0.0f, 0.f }, 10000.f), Vector3df({1.f, 0.f, 0.f}), false));
+    //Boden
+    box.add(raytracerObject(Sphere3df({0.f, -10012.0f, 0.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
+    //Decke
+    box.add(raytracerObject(Sphere3df({0.f, 10012.0f, 0.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
+    //Rückwand
+    box.add(raytracerObject(Sphere3df({0.0f, 0.0f, -10030.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
+    //Vordere Wand
+    box.add(raytracerObject(Sphere3df({0.0f, 0.0f, 10030.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
+
+    //Lichtquelle
+    light light1(Vector3df {0.f,11.f, -18.f});
+    //hinzufügen
+    box.lights.push_back(light1);
+
+
+    //Kugeln
+    box.add(raytracerObject(Sphere3df({-9.0f, -8.f, -20.f}, 4.f), Vector3df({0.5f, .5f, .5f}), false));
+    box.add(raytracerObject(Sphere3df({9.0f, -8.f, -20.f}, 4.f), Vector3df({0.5f, .5f, .5f}), true));
+
 
     //Camera
     auto focal_length = 1.0f;
@@ -121,7 +207,7 @@ int main(void) {
             auto pixel_center = pixel00_loc + (i*pixel_delta_u) + (j*pixel_delta_v);
             auto ray_direction = pixel_center - camera_center;
             Ray3df r(camera_center, ray_direction);
-            Vector3df pixel_color = ray_color(r);
+            Vector3df pixel_color = ray_color(r,box,5);
             write_color(std::cout, pixel_color);
         }
 

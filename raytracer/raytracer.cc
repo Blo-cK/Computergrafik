@@ -126,35 +126,51 @@ template<class FLOAT, size_t N>
         Intersection_Context<FLOAT, N> shader_Rec;
         //Prüfen ob Ray ein Objekt trift.
         raytracerObject *object = box.hit(r, rec);
+        //Prüfen ob die Rekursionstiefe nicht überschritten ist
         if (depth > 0 && box.hit(r, rec) != nullptr) {
+            //berechnung vom Lambertian Vektor
             Vector3df Lambertian = (box.lights[0].center - rec.intersection);
+            //Schattenstrahl erzeugen
             Ray3df shaderRay = {rec.intersection + 0.01f * rec.normal, Lambertian};
+            //Schattenstrahl senden
             box.hit(shaderRay, shader_Rec);
             float intensity = 0.f;
+            //Schattenstrahl Intensität reduzierten wenn Objekte getroffen werden
             if (shader_Rec.t > 0 && shader_Rec.t < 1) {
                 intensity = 0.3f;
             } else {
+                //Vektor Normalisieren und Intensität
                 Lambertian.normalize();
                 intensity = rec.normal * Lambertian;
             }
+            //mindestintensität
             if (intensity < 0.3f) {
                 intensity = 0.3f;
             }
+            //reflektion einbauen
             if (object->reflective) {
-                Vector3df reflective_Vec = r.direction - 2.f * (r.direction * rec.normal) * rec.normal;
+                //reflektionsvektor erzeugen
+                Vector3df reflective_Vec =  r.direction - 2.f * (r.direction * rec.normal) * rec.normal;
+
+                //get_reflective hat irgendwie nicht geklappt
+
+                //reflektierenden Ray erzeugen
                 Ray3df reflective_r = {rec.intersection + 0.1f * rec.normal, reflective_Vec};
+                //Rekursiv Farbe der reflektion finden
                 return intensity * ray_color(reflective_r, box, depth - 1);
             }
+            //rückgabe Farbe + intensität
             return intensity * object->color;
         }
+        //wenn nichts getroffen wird schwarz zurückgeben
         return Vector3df{0.f, 0.f, 0.f};
     }
 
 
 int main(void) {
     // Bildschirm erstellen
-    auto aspect_ratio = 16.0/9.0;
-    float image_width = 400.f;
+    auto aspect_ratio = 1.5/1.0;
+    float image_width = 1000.f;
         //image height calc
         float image_height = static_cast<int>(image_width/aspect_ratio);
 

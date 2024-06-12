@@ -187,7 +187,7 @@ int main(void) {
     //Rückwand
     box.add(raytracerObject(Sphere3df({0.0f, 0.0f, -10030.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
     //Vordere Wand
-    box.add(raytracerObject(Sphere3df({0.0f, 0.0f, 10030.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
+    //box.add(raytracerObject(Sphere3df({0.0f, 0.0f, 10030.f}, 10000.f), Vector3df({1.f, 1.f, 1.f}), false));
 
     //Lichtquelle
     light light1(Vector3df {0.f,11.f, -18.f});

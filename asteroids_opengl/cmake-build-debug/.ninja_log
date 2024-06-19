@@ -11,3 +11,6 @@
 1	2651	1718806245312396821	CMakeFiles/main_game.dir/game.cc.o	c4cdac38a5faaa23
 2	2722	1718806245312396821	CMakeFiles/main_game.dir/opengl_renderer.cc.o	aaaf80c649d0ee31
 2722	2943	1718806248032760651	main_game	bcbc5a94871aa88a
+4	2047	1718806577038518844	CMakeFiles/main_game.dir/main_game.cc.o	ba47a80942535c6b
+4	2355	1718806577038518844	CMakeFiles/main_game.dir/opengl_renderer.cc.o	aaaf80c649d0ee31
+2355	2503	1718806579386704260	main_game	bcbc5a94871aa88a

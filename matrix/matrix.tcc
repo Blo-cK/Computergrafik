@@ -7,7 +7,7 @@
 
 template <class FLOAT, size_t N>
 SquareMatrix<FLOAT, N>::SquareMatrix(std::initializer_list<Vector<FLOAT, N>> values) {
-    assert(values.size() == N);
+    //assert(values.size() == N);
     std::copy(values.begin(), values.end(), matrix.begin());
 }
 

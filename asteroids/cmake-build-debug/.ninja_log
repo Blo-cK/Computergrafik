@@ -1,0 +1,18 @@
+# ninja log v5
+2	2233	1712908088614903376	CMakeFiles/game_test.dir/timer.cc.o	f83e511de946325f
+1	2891	1712908089270903379	CMakeFiles/game_test.dir/physics.cc.o	580536b37a3faf00
+2	2731	1712908103424519574	CMakeFiles/main_game.dir/sdl2_game_controller.cc.o	fa8cf37f37816a62
+1	3466	1712908104160760180	CMakeFiles/main_game.dir/physics.cc.o	c877008b65804ca2
+1	3081	1712908103776636215	CMakeFiles/main_game.dir/main_game.cc.o	e53a1876b9351fcc
+1	610	1712908086990903366	CMakeFiles/game_test.dir/math.cc.o	6e8db965fc95fc9e
+2	2645	1712908103340491739	CMakeFiles/main_game.dir/timer.cc.o	435ec10735ee4a7
+3466	3691	1712908104380828524	main_game	f58a4068657eaa3f
+0	3389	1712908104080735327	CMakeFiles/main_game.dir/game.cc.o	637a90738a2bbc3d
+1	2917	1712908103608580545	CMakeFiles/main_game.dir/sdl2_renderer.cc.o	a60194aba48c603
+1	2925	1712908103616583197	CMakeFiles/main_game.dir/sound.cc.o	e124ea02f2e9dec6
+1	1313	1712908087694903370	CMakeFiles/game_test.dir/geometry.cc.o	4bb9ed01e51aca00
+0	1469	1712908102164083542	CMakeFiles/main_game.dir/geometry.cc.o	4721ceb4a843dd1d
+3572	3727	1712908090106903384	game_test	1d97da9a6a718a7b
+0	681	1712908101375790259	CMakeFiles/main_game.dir/math.cc.o	c45299d0c0fef677
+0	3571	1712908089950903383	CMakeFiles/game_test.dir/game_test.cc.o	643d1406833c6070
+1	2770	1712908089150903379	CMakeFiles/game_test.dir/game.cc.o	1d8089153e7514ec

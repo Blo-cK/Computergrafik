@@ -1,0 +1,4 @@
+Cannot generate into /home/robert/Computergrafik/asteroids_3d
+It is already used for project /home/robert/Downloads/Computergrafik-Aufgabe3/asteroids_3d
+
+Please either delete it manually or select another generation directory

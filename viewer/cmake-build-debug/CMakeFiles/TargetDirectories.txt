@@ -1,0 +1,4 @@
+/home/robert/Computergrafik/viewer/cmake-build-debug/CMakeFiles/viewer.dir
+/home/robert/Computergrafik/viewer/cmake-build-debug/CMakeFiles/wavefront_test.dir
+/home/robert/Computergrafik/viewer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/robert/Computergrafik/viewer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

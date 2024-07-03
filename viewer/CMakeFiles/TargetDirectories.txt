@@ -1,0 +1,4 @@
+/home/robert/Computergrafik/viewer/CMakeFiles/viewer.dir
+/home/robert/Computergrafik/viewer/CMakeFiles/wavefront_test.dir
+/home/robert/Computergrafik/viewer/CMakeFiles/edit_cache.dir
+/home/robert/Computergrafik/viewer/CMakeFiles/rebuild_cache.dir

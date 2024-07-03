@@ -1,0 +1,4 @@
+# ninja log v6
+1	1389	1719999929728053407	CMakeFiles/viewer.dir/viewer.cc.o	f8c01f1906217a9a
+3	772	1720006897902126933	CMakeFiles/viewer.dir/wavefront.cc.o	4adebf0c593f5d30
+772	921	1720006898674129686	viewer	5c4b4ee39707283a

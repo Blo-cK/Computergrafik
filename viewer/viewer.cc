@@ -271,7 +271,7 @@ std::vector<float> create_vertices(WavefrontImporter & wi) {
 }
 
 int main(void) {
-  std::fstream in("teapot.obj");
+  std::fstream in("torpedo.obj");
   WavefrontImporter wi( in );
   wi.parse();
   std::vector<float> vertices = create_vertices(wi);

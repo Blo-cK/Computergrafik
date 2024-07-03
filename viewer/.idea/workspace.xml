@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="viewer" targetName="wavefront_test" />
+      <config projectName="viewer" targetName="viewer" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8ca8bf6-f942-4763-a24b-e8184dc57d11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/asteroids_opengl.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a35f1cdd9314ba5d8716.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-fd5331f12bda64f2e30d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4631c9708a739656ecc4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/index-2024-07-03T09-43-22-0304.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-game_test-Debug-f5dd78d559cb9e6538fe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-geometry_test-Debug-c6e8ce3f940f3c7e49f8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-main_game-Debug-6dd3cb4561c8c803647a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-math_test-Debug-28c6095e63d88a514682.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-matrix_test-Debug-6d5d956565bb3499431e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/target-physics_test-Debug-af69886d5344b6b4fd3b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-536a7eaeba1a33fdf7c1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/CTestTestfile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/main_game" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/bangLarge.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/bangMedium.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/bangSmall.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/beat1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/beat2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/extraShip.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/fire.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/saucerBig.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/saucerSmall.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/cmake-build-debug/sound/thrust.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/game.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/game.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/game_controller.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/game_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/geometry.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/geometry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/geometry.tcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/geometry_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/main_game.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/math.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/math.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/math.tcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/math_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/math_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/matrix.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/matrix.tcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/matrix_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/matrix_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/opengl_renderer.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/opengl_renderer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/physics.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/physics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/physics.tcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/physics_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/renderer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sdl2_game_controller.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sdl2_game_controller.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sdl2_renderer.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sdl2_renderer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/bangLarge.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/bangMedium.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/bangSmall.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/beat1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/beat2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/extraShip.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/fire.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/saucerBig.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/saucerSmall.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/sound/thrust.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/timer.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/wavefront.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids3D/wavefront.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/.cmake/api/v1/reply/cache-v2-7c92577ad68a1b16928c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0ff4117eb834ffe38870.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/.cmake/api/v1/reply/index-2024-06-19T14-10-27-0253.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/game.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/geometry.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/main_game.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/math.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/matrix.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/opengl_renderer.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/physics.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/sdl2_game_controller.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/sdl2_renderer.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/sound.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/main_game.dir/timer.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../asteroids_opengl/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/viewer.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/viewer.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/viewer.dir/viewer.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/viewer.dir/viewer.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/viewer.dir/wavefront.cc.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/viewer.dir/wavefront.cc.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/wavefront_test.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/wavefront_test.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-07-03T09-45-27-0254.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/viewer.dir/viewer.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/viewer.dir/viewer.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/viewer.dir/wavefront.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/viewer.dir/wavefront.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/viewer" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/viewer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/viewer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wavefront.cc" beforeDir="false" afterPath="$PROJECT_DIR$/wavefront.cc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Blo-cK&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Blo-cK/Computergrafik.git&quot;,
+    &quot;accountId&quot;: &quot;67c8da6c-5a11-4d9c-9a70-1b09d31c9ddd&quot;
+  }
+}</component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="1.4" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ijlLlwwSxEzgO8w1mRCLBiEMbo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.viewer.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/robert/Computergrafik/asteroids_3d",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application.viewer">
+    <configuration name="wavefront_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="viewer" TARGET_NAME="wavefront_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="viewer" RUN_TARGET_NAME="wavefront_test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="viewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="viewer" TARGET_NAME="viewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="viewer" RUN_TARGET_NAME="viewer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Google Test.wavefront_test" />
+      <item itemvalue="CMake Application.viewer" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8ca8bf6-f942-4763-a24b-e8184dc57d11" name="Changes" comment="" />
+      <created>1720011813384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720011813384</updated>
+      <workItem from="1720011814409" duration="1330000" />
+      <workItem from="1720015399723" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>

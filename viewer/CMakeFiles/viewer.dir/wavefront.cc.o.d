@@ -169,4 +169,5 @@ CMakeFiles/viewer.dir/wavefront.cc.o: \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/robert/Computergrafik/viewer/debug.h /usr/include/c++/13/iostream
+ /home/robert/Computergrafik/viewer/debug.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/limits
